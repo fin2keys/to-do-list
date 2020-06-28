@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --mainbg: #303030;
+  --todobg: #505050;
+}
+:root, html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-page-container {
+  background-color: var(--mainbg);
+  width: 700px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.high-level-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4rem;
+  color: white;
+}
+.todo-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type="text"] {
+  border: none;
+  height: 30px;
+  width: 50%;
+  margin-bottom: 5px; 
+  outline: none;
+}
+input[value="TO-DO"] {
+  border: none;
+  margin-top: 5px;
+  width: 50%;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+}
+.todo-list-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.to-do {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px;
+}
+.to-do-content {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--todobg);
+  box-shadow: 0px 0px 8px var(--mainbg);
+  background-color: var(--todobg);
+  border-radius: 8px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  margin: 8px;
+}
+.trash-can {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/trash.svg);
+  background-size: cover;
+  margin-right: 8px;
+  cursor: pointer;
+}
